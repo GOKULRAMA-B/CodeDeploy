@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install -y nginx
-# Example for a Node.js application
-# npm install
+sudo yum update -y
+sudo yum install -y nodejs npm # Install Node.js and npm
+npm install # Install Node.js project dependencies
