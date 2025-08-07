@@ -1,14 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /var/www/html
+  - source: / # Specifies the source of your application files within the revision
+    destination: /var/www/html # The destination path on the EC2 instance
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: scripts/install_dependencies.sh # Script to install dependencies
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/start_application.sh
+    - location: scripts/start_application.sh # Script to start your application
       timeout: 60
       runas: root
