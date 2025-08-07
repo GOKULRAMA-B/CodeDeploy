@@ -1,4 +1,5 @@
 #!/bin/bash
-
-sudo yum install httpd -y
-sudo service httpd start
+sudo apt-get update
+sudo apt-get install -y nginx
+# Example for a Node.js application
+# npm install
